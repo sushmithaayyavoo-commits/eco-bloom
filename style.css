@@ -1,0 +1,267 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    background-color: #e8f5e9;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-img {
+    width: 45%;
+    max-width: 420px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn {
+    padding: 12px 25px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1b5e20;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+/* PRODUCTS */
+.products {
+    background-color: #f1f8e9;
+}
+
+.product-box {
+    background-color: white;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product-box img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* HOW IT WORKS */
+.steps {
+    font-size: 18px;
+    list-style-position: inside;
+}
+
+/* CONTACT */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #2e7d32;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .hero-img {
+        width: 70%;
+    }
+
+    .product-box {
+        width: 90%;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+}
+.contact {
+  padding: 60px 20px;
+  background: #f4fdf6;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form button {
+  background: #2e7d32;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #1b5e20;
+}
+.policy {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f9fff9;
+  border-radius: 8px;
+}
+
+.policy h1 {
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.policy h3 {
+  margin-top: 20px;
+  color: #388e3c;
+}
+
+.policy p, .policy li {
+  color: #444;
+  line-height: 1.6;
+}
+body {
+  animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+.product img {
+  transition: transform 0.4s ease;
+}
+
+.product img:hover {
+  transform: scale(1.08);
+}
+.product {
+  transition: box-shadow 0.3s ease;
+}
+
+.product:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 70%;
+  }
+}
